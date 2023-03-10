@@ -115,8 +115,8 @@ type GetBlockVerboseTxResult struct {
 	Nonce         uint32        `json:"nonce"`
 	Bits          string        `json:"bits"`
 	Difficulty    float64       `json:"difficulty"`
-	PreviousHash  string        `json:"previousblockhash"`
-	NextHash      string        `json:"nextblockhash,omitempty"`
+	PreviousHash  *string       `json:"previousblockhash,omitempty"`
+	NextHash      *string       `json:"nextblockhash,omitempty"`
 	ChainWork     string        `json:"chainwork"`
 	NTx           uint32        `json:"nTx"`
 }
